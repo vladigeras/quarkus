@@ -1,0 +1,12 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: quarkus_user
+    password: quarkus_password
+    jdbc:
+      url: "jdbc:postgresql://localhost:5432/quarkus_db"
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+  smallrye-openapi:
+    enable: true
